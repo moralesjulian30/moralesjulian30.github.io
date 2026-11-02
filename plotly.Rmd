@@ -1,0 +1,59 @@
+---
+title: "plotly"
+author: "Julian Morales"
+date: "2026-11-02"
+output: html_document
+---
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+```{r}
+rest_inspec =
+  rest_inspec |>
+  select(
+    boro, grade, score, dba,
+    latitude, longitude, inspection_date
+  ) |>
+  filter(
+    !is.na(score),
+    !is.na(grade),
+    !is.na(latitude),
+    !is.na(longitude),
+    boro == "Manhattan",
+    grade %in% c("A", "B", "C"),
+    latitude != 0,
+    longitude != 0
+  )
+```
+
+# plotly
+```{r}
+rest_inspec |>
+  mutate(text_label = str_c("Score", score, "Grade", grade)) |> 
+  plot_ly(
+    x = ~latitude, y = ~longitude, type = "scatter", mode = "markers",
+    color = ~score, text = ~text_label, alpha = 0.5)
+```
+
+# plotly barchart
+```{r}
+rest_inspec |>
+  filter(grade %in% c("A", "B", "C")) |>
+  count(grade) |>
+  plot_ly(x = ~grade, y = ~n, type = "bar", color = ~grade)
+```
+
+# plotly boxplot
+```{r}
+rest_inspec |>
+  filter(
+    !is.na(score),
+    !is.na(grade)
+  ) |>
+  plot_ly(x = ~grade, y = ~score, type = "box")
+```
+

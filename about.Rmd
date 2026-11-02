@@ -1,0 +1,105 @@
+---
+title: "About Me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+Welcome to my personal website! I am a Master of Public Health
+student specializing in epidemiology and applied biostatistics.
+
+
+## Education
+
+### Columbia University Mailman School of Public Health
+**Master of Public Health, Epidemiology**  
+*Certificate: Applied Biostatistics and Public Health Data Science*  
+New York, NY | Expected May 2027
+
+- **Scholarships:** Public Health Merit Scholarship
+- **Relevant Coursework:** Applied Regression I, Design and
+  Conduct of Observational Epidemiological Studies,
+  Applications of Epidemiologic Research
+
+### Macaulay Honors College at John Jay College of Criminal Justice
+**Bachelor of Science, Forensic Science**  
+New York, NY | May 2024
+
+- **Honors:** Cum Laude, Dean's List (2021–2024)
+- **Awards:** Honors Outstanding Capstone Prize in the
+  Natural Sciences (2024)
+
+---
+
+## Professional Experience
+
+### Health Professional | Assistant Data Manager
+**New York State Psychiatric Institute - GPEG** | *New York, NY*  
+October 2026 – Present
+
+- Perform physical assessments for eligible participants to collect baseline   and follow-up data.
+- Collect physiologic fluid samples including blood and urine for biomarker   assays.
+- Conducting blood processing and plasma platelet collection.
+- Using SAS and R to conduct data analysis on data collected in previous      study waves
+
+### Adjunct College Laboratory Technician
+**John Jay College of Criminal Justice** | *New York, NY*  
+November 2024 – Present
+
+- Prepare chemical reagents and conduct laboratory tests and experiments for   class instruction. 
+- Maintain a clean laboratory environment, calibrate laboratory equipment,    and enforce safety guidelines.
+- Log student experimental data. 
+- Receive, label, and analyze biological and chemical samples.
+
+---
+
+## Research Experience
+
+### Research Intern — SESSTIM
+**Aix-Marseille University** | *Marseille, France*  
+Summer 2026
+
+- Investigated differences between relative survival and
+  cause-specific survival estimates using SEER cancer data.
+- Applied statistical methods to evaluate survival
+  estimates across cancer sites and patient subgroups.
+- Used R, SAS, and Julia for statistical analysis.
+
+### Undergraduate Researcher - PRISM URP
+**John Jay College of Criminal Justice** | *New York, NY*                  May 2023 - August 2024
+
+- Led analysis of 200 DNA sequences to identify evolutionary changes within
+  nucleotide base pairs and observed miRNA functionality between species
+  using UCSC Genome Browser and miRBase, large gene databases.
+- Reviewed and validated Python-based sequence prediction scripts,
+  identifying logic and output errors.
+- Quantified miRNA expression levels across tissues using publicly
+  available databases (TissueAtlas).
+- Integrated ClinVar data to evaluate disease associations linked to
+  statistically significant miRNA variants.
+
+---
+
+## Publications and Presentations
+
+### Publications
+
+**Morgan, D., Colbert, L., Morales, J., Rahib, L., Golden, M.** A REVIEW OF THERAPEUTIC CHRONIC AND RECURRENT ACUTE PANCREATITIS CLINICAL TRIALS. *Digestive Disease Week® (DDW)*. 2025 May 3-6. San Diego, CA: DDW; 2025. Abstract nr 4250328. 
+
+**Lents, N. H., Morales, J.** Genetic Diversity in MicroRNAs among Denisovans, Neanderthals, and Modern Humans: Evidence for Balancing Selection. *94th Annual Meeting of the American Association of Biological Anthropologists*. 2025 Mar 12-15. Baltimore, MD: AABA; 2025. Abstract nr 235. 
+
+**Blanco, D. E., Morales, J., Sethuraman, S., Atwi, R., Lasri, A., Rajput, N. N., & Modestino, M. A.** (2020). Effect of electrolyte cations on organic electrosynthesis: The case of adiponitrile electrochemical production.  
+*Journal of The Electrochemical Society*, 167(15), 155526.  
+[https://doi.org/10.1149/1945-7111/abc766](https://doi.org/)
+
+---
+
+## Technical Skills
+
+- **Statistical Programming:** R, SAS
+- **Data Management:** SQL, REDCap
+- **Statistical Methods:** Survival Analysis, Regression,
+  Epidemiologic Study Design
+- **Other Tools:** Git, GitHub, LaTeX
+
+---

@@ -1,0 +1,73 @@
+---
+title: "NYC Restaurant Inspection Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+rest_inspec =
+  rest_inspec |>
+  select(
+    boro, grade, score, dba,
+    latitude, longitude, inspection_date
+  ) |>
+  filter(
+    !is.na(score),
+    !is.na(grade),
+    !is.na(latitude),
+    !is.na(longitude),
+    boro == "Manhattan",
+    grade %in% c("A", "B", "C"),
+    latitude != 0,
+    longitude != 0
+  )
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+# Plotly
+rest_inspec |>
+  mutate(text_label = str_c("Score", score, "Grade", grade)) |> 
+  plot_ly(
+    x = ~latitude, y = ~longitude, type = "scatter", mode = "markers",
+    color = ~score, text = ~text_label, alpha = 0.5)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+# plotly bar chart
+rest_inspec |>
+  filter(grade %in% c("A", "B", "C")) |>
+  count(grade) |>
+  plot_ly(x = ~grade, y = ~n, type = "bar", color = ~grade)
+```
+
+### Chart C
+
+```{r}
+# plotly boxplot
+rest_inspec |>
+  filter(
+    !is.na(score),
+    !is.na(grade)
+  ) |>
+  plot_ly(x = ~grade, y = ~score, type = "box")
+```
+
