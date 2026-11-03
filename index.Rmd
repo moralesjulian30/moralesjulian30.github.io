@@ -7,7 +7,7 @@ output:
 ---
 # This is Julian's Website
 
-<img src="images/Emanuel.jpg" style="width:75%">
+<img src="images/Labcoat.png" style="width:75%">
 
 This is my personal website. 
 
